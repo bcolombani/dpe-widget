@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>DPE widget examples</title>
+    <link rel="stylesheet" type="text/css" href="dpe-widget.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="dpe-widget.js"></script>
+    <script>
+$(function() {
+  $('#ce-test').dpeWidget('ce', 'logement', 50) ;
+  $('#ges-test').dpeWidget('ges', 'b&acirc;timent', 34) ;
+  $('#ce-test-bound').dpeWidget('ce', 'logement', 30, { boundInputId : 'bound-input', inputName : 'custom-name' }) ;
+  $('#ges-test-readonly').dpeWidget('ges', 'logement', 67, { readOnly : true }) ;
+}) ;
+    </script>
+  </head>
+  <body>
+    <h1>CE widget</h1>
+    <div id="ce-test"></div>
+    <h1>GES widget</h1>
+    <div id="ges-test"></div>
+    <h1>Widget with bound input</h1>
+    <div id="ce-test-bound"></div><input type='text' id="bound-input"></input>
+    <h1>Read only widget</h1>
+    <div id="ges-test-readonly"></div>
+  </body>
+</html>
