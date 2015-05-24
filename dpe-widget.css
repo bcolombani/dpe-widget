@@ -257,5 +257,8 @@
     font-size : 16px ;
     font-weight : bold ;
     text-align : right ;
+    line-height: 28px;
+    padding: 0px;
+    margin: 1px;
 }
 

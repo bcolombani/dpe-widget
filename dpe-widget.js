@@ -112,7 +112,6 @@ Faible &eacute;mission de GES \
 Forte &eacute;mission de GES \
 <% } %> \
 </span> \
-<span class="dpe-caption"><% if(measureType === "ce") { %><%= propertyType %>  <% } else { %><% } %></span> \
 </div> \
 <div class="dpe-selector-container"> \
 <div class="dpe-caption dpe-caption-property">Ce <%= propertyType %></div> \
